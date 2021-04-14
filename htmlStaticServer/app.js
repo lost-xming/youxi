@@ -4,9 +4,7 @@ const path = require("path");
 
 app.use(express.static("/wwl-code/youxi/"));
 app.get("*", function (req, res) {
-	res.sendFile(
-		path.resolve(__dirname, "../2haopengyoushouqianshou/index.html")
-	);
+	res.sendFile(path.resolve(__dirname, "../3shuishangjiuyuan/index.html"));
 });
 const server = app.listen(7001, function () {
 	const host = server.address().address;
