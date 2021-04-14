@@ -1,0 +1,28 @@
+{
+
+"loc":"English",
+
+"level":"Level",
+
+"a0":{"title":"FRUIT EATER","desc":"eat 100 apples"},
+"a1":{"title":"KING OF THE JUNGLE","desc":"complete the game"},
+"a2":{"title":"LIVING GOD","desc":"collect all the stars"},
+
+"l1":{"title":"test"},
+"l2":{"title":"test"},
+"l3":{"title":"test"},
+"l4":{"title":"test"},
+"l5":{"title":"test"},
+"l6":{"title":"test"},
+"l7":{"title":"test"},
+"l8":{"title":"test"},
+"l9":{"title":"test"},
+"l10":{"title":"test"},
+"l11":{"title":"test"},
+"l12":{"title":"test"},
+"l13":{"title":"test"},
+"l14":{"title":"test"},
+"l15":{"title":"test"}
+
+
+}

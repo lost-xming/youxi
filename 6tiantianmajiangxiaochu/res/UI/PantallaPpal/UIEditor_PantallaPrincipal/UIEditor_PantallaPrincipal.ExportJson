@@ -1,0 +1,534 @@
+{
+  "classname": null,
+  "name": null,
+  "animation": {
+    "classname": null,
+    "name": "AnimationManager",
+    "actionlist": [
+      {
+        "classname": null,
+        "name": "main_entrada",
+        "actionnodelist": [
+          {
+            "classname": null,
+            "name": "fondo_lienzo",
+            "ActionTag": 35357490,
+            "actionframelist": [
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 0,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 1100,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 0,
+                "visible": false
+              },
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 10,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 419,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 26,
+                "visible": false
+              }
+            ]
+          }
+        ],
+        "loop": false,
+        "unittime": 0.1
+      },
+      {
+        "classname": null,
+        "name": "main_inicial",
+        "actionnodelist": [
+          {
+            "classname": null,
+            "name": "fondo_lienzo",
+            "ActionTag": 35357490,
+            "actionframelist": [
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 0,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 1100,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 0,
+                "visible": false
+              }
+            ]
+          }
+        ],
+        "loop": false,
+        "unittime": 0.1
+      },
+      {
+        "classname": null,
+        "name": "main_loop",
+        "actionnodelist": [
+          {
+            "classname": null,
+            "name": "logo_principal",
+            "ActionTag": 43915171,
+            "actionframelist": [
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 0,
+                "opacity": 255,
+                "positionx": -9.417534E-06,
+                "positiony": 154.000031,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 0,
+                "visible": false
+              },
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 10,
+                "opacity": 255,
+                "positionx": -9.417534E-06,
+                "positiony": 154.000031,
+                "rotation": 0,
+                "scalex": 1.06,
+                "scaley": 1.06,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 1,
+                "visible": false
+              },
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 20,
+                "opacity": 255,
+                "positionx": -9.417534E-06,
+                "positiony": 154.000031,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 2,
+                "visible": false
+              }
+            ]
+          }
+        ],
+        "loop": true,
+        "unittime": 0.1
+      },
+      {
+        "classname": null,
+        "name": "main_salida",
+        "actionnodelist": [
+          {
+            "classname": null,
+            "name": "fondo_lienzo",
+            "ActionTag": 35357490,
+            "actionframelist": [
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 0,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 419,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 0,
+                "visible": false
+              },
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 4,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 419,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 0,
+                "visible": false
+              },
+              {
+                "classname": null,
+                "name": null,
+                "colorb": 255,
+                "colorg": 255,
+                "colorr": 255,
+                "frameid": 10,
+                "opacity": 255,
+                "positionx": 512,
+                "positiony": 1100,
+                "rotation": 0,
+                "scalex": 1,
+                "scaley": 1,
+                "starttime": 0,
+                "tweenParameter": [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "tweenType": 25,
+                "visible": false
+              }
+            ]
+          }
+        ],
+        "loop": false,
+        "unittime": 0.1
+      }
+    ]
+  },
+  "dataScale": 1,
+  "designHeight": 768,
+  "designWidth": 1024,
+  "textures": [
+    "UIEditor_PantallaPrincipal0.plist"
+  ],
+  "texturesPng": [
+    "UIEditor_PantallaPrincipal0.png"
+  ],
+  "version": "1.6.0.0",
+  "widgetTree": {
+    "classname": "Panel",
+    "name": null,
+    "children": [
+      {
+        "classname": "ImageView",
+        "name": null,
+        "children": [
+          {
+            "classname": "Button",
+            "name": null,
+            "children": [],
+            "options": {
+              "__type": "ButtonSurrogate:#EditorCommon.JsonModel.Component.GUI",
+              "classname": "Button",
+              "name": "boton_play",
+              "ZOrder": 0,
+              "actiontag": 60129,
+              "anchorPointX": 0.5,
+              "anchorPointY": 0.5,
+              "classType": "CocoStudio.EngineAdapterWrap.CSButton",
+              "colorB": 255,
+              "colorG": 255,
+              "colorR": 255,
+              "customProperty": "",
+              "flipX": false,
+              "flipY": false,
+              "height": 99,
+              "ignoreSize": true,
+              "layoutParameter": null,
+              "opacity": 255,
+              "positionPercentX": 0,
+              "positionPercentY": -0.145205483,
+              "positionType": 0,
+              "rotation": 0,
+              "scaleX": 1.04531538,
+              "scaleY": 1.04531538,
+              "sizePercentX": 0.386567175,
+              "sizePercentY": 0.135616437,
+              "sizeType": 0,
+              "tag": 11,
+              "touchAble": true,
+              "useMergedTexture": true,
+              "visible": true,
+              "width": 259,
+              "x": 0,
+              "y": -106,
+              "capInsetsHeight": 1,
+              "capInsetsWidth": 1,
+              "capInsetsX": 0,
+              "capInsetsY": 0,
+              "disabled": null,
+              "disabledData": {
+                "path": "ppal_boton_play_press.png",
+                "plistFile": "",
+                "resourceType": 1
+              },
+              "fontName": "微软雅黑",
+              "fontSize": 14,
+              "fontType": 0,
+              "normal": null,
+              "normalData": {
+                "path": "ppal_boton_play.png",
+                "plistFile": "",
+                "resourceType": 1
+              },
+              "pressed": null,
+              "pressedData": {
+                "path": "ppal_boton_play_press.png",
+                "plistFile": "",
+                "resourceType": 1
+              },
+              "scale9Enable": false,
+              "scale9Height": 99,
+              "scale9Width": 259,
+              "text": "",
+              "textColorB": 255,
+              "textColorG": 255,
+              "textColorR": 255
+            }
+          },
+          {
+            "classname": "ImageView",
+            "name": null,
+            "children": [],
+            "options": {
+              "__type": "ImageViewSurrogate:#EditorCommon.JsonModel.Component.GUI",
+              "classname": "ImageView",
+              "name": "logo_principal",
+              "ZOrder": 0,
+              "actiontag": 43915171,
+              "anchorPointX": 0.5,
+              "anchorPointY": 0.5,
+              "classType": "CocoStudio.EngineAdapterWrap.CSImageView",
+              "colorB": 255,
+              "colorG": 255,
+              "colorR": 255,
+              "customProperty": "",
+              "flipX": false,
+              "flipY": false,
+              "height": 282,
+              "ignoreSize": true,
+              "layoutParameter": null,
+              "opacity": 255,
+              "positionPercentX": 0,
+              "positionPercentY": 0.2109589,
+              "positionType": 0,
+              "rotation": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "sizePercentX": 0.568656743,
+              "sizePercentY": 0.386301368,
+              "sizeType": 0,
+              "tag": 752,
+              "touchAble": false,
+              "useMergedTexture": true,
+              "visible": true,
+              "width": 381,
+              "x": 0,
+              "y": 154,
+              "capInsetsHeight": 1,
+              "capInsetsWidth": 1,
+              "capInsetsX": 0,
+              "capInsetsY": 0,
+              "fileName": null,
+              "fileNameData": {
+                "path": "pantalla_ppal_logo.png",
+                "plistFile": "",
+                "resourceType": 1
+              },
+              "scale9Enable": false,
+              "scale9Height": 282,
+              "scale9Width": 381
+            }
+          }
+        ],
+        "options": {
+          "__type": "ImageViewSurrogate:#EditorCommon.JsonModel.Component.GUI",
+          "classname": "ImageView",
+          "name": "fondo_lienzo",
+          "ZOrder": 0,
+          "actiontag": 35357490,
+          "anchorPointX": 0.5,
+          "anchorPointY": 0.4,
+          "classType": "CocoStudio.EngineAdapterWrap.CSImageView",
+          "colorB": 255,
+          "colorG": 255,
+          "colorR": 255,
+          "customProperty": "",
+          "flipX": false,
+          "flipY": false,
+          "height": 730,
+          "ignoreSize": true,
+          "layoutParameter": null,
+          "opacity": 255,
+          "positionPercentX": 0.5,
+          "positionPercentY": 0.545572937,
+          "positionType": 0,
+          "rotation": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "sizePercentX": 0.6542969,
+          "sizePercentY": 0.9505208,
+          "sizeType": 0,
+          "tag": 751,
+          "touchAble": false,
+          "useMergedTexture": true,
+          "visible": true,
+          "width": 670,
+          "x": 512,
+          "y": 419,
+          "capInsetsHeight": 1,
+          "capInsetsWidth": 1,
+          "capInsetsX": 0,
+          "capInsetsY": 0,
+          "fileName": null,
+          "fileNameData": {
+            "path": "pantalla_ppal_lienzo.png",
+            "plistFile": "",
+            "resourceType": 1
+          },
+          "scale9Enable": false,
+          "scale9Height": 730,
+          "scale9Width": 670
+        }
+      }
+    ],
+    "options": {
+      "__type": "PanelSurrogate:#EditorCommon.JsonModel.Component.GUI",
+      "classname": "Panel",
+      "name": "Panel",
+      "ZOrder": 0,
+      "actiontag": -1,
+      "anchorPointX": 0,
+      "anchorPointY": 0,
+      "classType": "CocoStudio.EngineAdapterWrap.CSPanel",
+      "colorB": 255,
+      "colorG": 255,
+      "colorR": 255,
+      "customProperty": "",
+      "flipX": false,
+      "flipY": false,
+      "height": 768,
+      "ignoreSize": false,
+      "layoutParameter": null,
+      "opacity": 255,
+      "positionPercentX": 0,
+      "positionPercentY": 0,
+      "positionType": 0,
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "sizePercentX": 0,
+      "sizePercentY": 0,
+      "sizeType": 0,
+      "tag": 4,
+      "touchAble": false,
+      "useMergedTexture": true,
+      "visible": true,
+      "width": 1024,
+      "x": 0,
+      "y": 0,
+      "adaptScreen": false,
+      "backGroundImage": null,
+      "backGroundImageData": null,
+      "backGroundScale9Enable": false,
+      "bgColorB": 255,
+      "bgColorG": 200,
+      "bgColorOpacity": 0,
+      "bgColorR": 150,
+      "bgEndColorB": 255,
+      "bgEndColorG": 0,
+      "bgEndColorR": 0,
+      "bgStartColorB": 255,
+      "bgStartColorG": 255,
+      "bgStartColorR": 255,
+      "capInsetsHeight": 0,
+      "capInsetsWidth": 0,
+      "capInsetsX": 0,
+      "capInsetsY": 0,
+      "clipAble": false,
+      "colorType": 1,
+      "layoutType": 0,
+      "vectorX": 0,
+      "vectorY": -0.5
+    }
+  }
+}

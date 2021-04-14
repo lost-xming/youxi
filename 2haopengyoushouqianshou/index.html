@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>好朋友手牵手</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="keywords" content="好朋友手牵手,好朋友手牵手html5游戏" />
+<meta name="description" content="好朋友手牵手html5游戏,好朋友手牵手手机在线游戏" />
+<link rel="apple-touch-icon" href="icon.png" />
+<link rel="shortcut icon" href="icon.png" />
+<link rel="icon" href="icon.png" />
+<script>
+var game = null;
+// Package-ID
+window.famobi_gameID = "hold-my-hand-friend";
+window.famobi_gameJS = ['js/all.js',
+function(){
+setTimeout("window.scrollTo(0, 1)", 10);
+game = new Phaser.Game(960, 640, Phaser.AUTO, 'gameContainer');
+WebFontConfig =
+{
+google:
+{
+families: ['Chewy']
+}
+}
+game.state.add('Boot', Game.Boot);
+game.state.add('Preloader', Game.Preloader);
+game.state.add('MainMenu', Game.MainMenu);
+game.state.add('Credits', Game.Credits);
+game.state.add('MenuLevel', Game.MenuLevel);
+game.state.add('Level_1', Game.Level_1);
+game.state.add('Level_2', Game.Level_2);
+game.state.add('Level_3', Game.Level_3);
+game.state.add('Level_4', Game.Level_4);
+game.state.add('Level_5', Game.Level_5);
+game.state.add('Level_6', Game.Level_6);
+game.state.add('Level_7', Game.Level_7);
+game.state.add('Level_8', Game.Level_8);
+game.state.add('Level_9', Game.Level_9);
+game.state.add('Level_10', Game.Level_10);
+game.state.add('Level_11', Game.Level_11);
+game.state.add('Level_12', Game.Level_12);
+game.state.add('Level_13', Game.Level_13);
+game.state.add('Level_14', Game.Level_14);
+game.state.add('Level_15', Game.Level_15);
+game.state.add('Level_16', Game.Level_16);
+game.state.add('Level_17', Game.Level_17);
+game.state.add('Level_18', Game.Level_18);
+game.state.add('Level_19', Game.Level_19);
+game.state.add('Level_20', Game.Level_20);
+game.state.add('Level_21', Game.Level_21);
+game.state.add('Level_22', Game.Level_22);
+game.state.add('Level_23', Game.Level_23);
+game.state.add('Level_24', Game.Level_24);
+game.state.add('Level_25', Game.Level_25);
+game.state.add('Level_26', Game.Level_26);
+game.state.add('Level_27', Game.Level_27);
+game.state.add('Level_28', Game.Level_28);
+game.state.add('Level_29', Game.Level_29);
+game.state.add('Level_30', Game.Level_30);
+game.state.start('Boot');
+}
+];
+(function (document, url, fgJS, firstJS) {
+fgJS = document.createElement('script');
+firstJS = document.getElementsByTagName('script')[0];
+fgJS.src = url + encodeURIComponent(document.location.href);
+firstJS.parentNode.insertBefore(fgJS, firstJS);
+})(document, './gameapi/v1.js?e=');
+</script>
+</head>
+<div id="gameContainer"></div>
+<body background="assets/game_bg.png">
+<style>
+body
+{
+margin:0;
+}
+</style>
+<script src="../js/stat.js"></script>
+</body>
+</html>

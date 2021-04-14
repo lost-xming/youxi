@@ -1,0 +1,83 @@
+{
+  "languageCode": "en-US",
+
+
+  "levelselect.todayslevel" : "Todays' Board",
+  "levelselect.previouslevel" : "Past 6 days boards",
+  "levelselect.play" : "Play",
+  "levelselect.newlevel" : "Come back tomorrow for a new board!",
+  "levelselect.topscore" : "Top Score",
+
+  "options.howtoplay" : "How to Play?",
+  "options.credits" : "Credits",
+  "options.back" : "Back",
+  "options.close" : "Close",
+
+  "options.moregames" : "More\nGames",
+
+  "tutorial.page1" : "Match the pairs of Mahjong pieces to score.\nYou can reach only pieces with at least one free side (left or right).",
+  "tutorial.page2" : "There are special Mahjong pieces. You can match any flower tile with any other flower tile, and any season tile with any season tile, however you can't match a flower tile with a season tile.",
+  "tutorial.seasons" : "Seasons",
+  "tutorial.flowers" : "Flowers",
+  "tutorial.page3" : "Solve the level board before time runs out.\nIf you need some help, you can use hints.",
+  "tutorial.ok" : "OK",
+
+  "tutorial.title1" : "Matches",
+  "tutorial.title2" : "Special Pieces",
+  "tutorial.title3" : "Time and Hints",
+
+  "credits.developer" : "Developed by",
+  "credits.publisher" : "Published by",
+
+  "gameplay.nomoves" : "There are no more available moves. Please wait.",
+  "gameplay.hints" : "Hint",
+  "gameplay.moves" : "Possible moves",
+  "gameplay.score" : "Score",
+
+  "pause.continue" : "Continue",
+  "pause.restart" : "Restart Level",
+  "pause.exit" : "Level Menu",
+  "pause.restartconfirmation" : "Sure you want to restart the level?",
+  "pause.exitconfirmation" : "Sure you want to quit the level?",
+
+  "levelfinished.win" : "Level Completed",
+  "levelfinished.lose" : "Game Over",
+  "levelfinished.points" : "points",
+  "levelfinished.newhighscore" : "New Highscore!",
+
+  "loading.title" : "Loading",
+
+  "deluxe.title" : "Download the Deluxe Version",
+
+  "deluxe.mf1.title" : "MAHJONGG FORTUNA DELUXE",
+  "deluxe.mf1.subtitle" : "DELUXE VERSION",
+  "deluxe.mf1.description" : "Download Mahjongg Fortuna Deluxe Now",
+  "deluxe.mf1.feature1" : "- Enjoy the challenging gameplay\n- Choose from different settings and tile sets\n- Play against the clock or strategically",
+
+  "deluxe.mf2.title" : "MAHJONG FORTUNA 2",
+  "deluxe.mf2.subtitle" : "DELUXE VERSION",
+  "deluxe.mf2.description" : "Download Mahjong Fortuna 2 Now",
+  "deluxe.mf2.feature1" : "- 3 game modes: Arcade, Classic and Fortuna\n- Many different collections and backgrounds\n- 96 levels",
+
+  "deluxe.hm.title" : "Hotel Mahjong",
+  "deluxe.hm.subtitle" : "DELUXE VERSION",
+  "deluxe.hm.description" : "Download Hotel Mahjong Now",
+  "deluxe.hm.feature1" : "- 5 different mahjong games\n- 20 floors with 5 rooms each\n- 2 game modes: against the clock or without pressure",
+
+  "deluxe.features" : "Features",
+  "deluxe.continue" : "Continue",
+  "deluxe.download" : "Download",
+
+  "day.0" : "Sunday",
+  "day.1" : "Monday",
+  "day.2" : "Tuesday",
+  "day.3" : "Wednesday",
+  "day.4" : "Thursday",
+  "day.5" : "Friday",
+  "day.6" : "Saturday",
+  "day.yesterday" : "Yesterday",
+
+  "number.decimal_separator" : ".",
+  "number.thousands_separator" : ","
+
+}

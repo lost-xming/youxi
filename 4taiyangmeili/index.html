@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<script src="MatchThree.min.js"></script>
+<script type="text/javascript" src="./game.js"></script>
+<title>太阳魅力</title>
+<meta name="keywords" content="太阳魅力,太阳魅力html5游戏" />
+<meta name="description" content="太阳魅力html5游戏,太阳魅力手机在线游戏" />
+<link rel="apple-touch-icon" href="icon.png" />
+<link rel="shortcut icon" href="icon.png" />
+<link rel="icon" href="icon.png" />
+</head>
+<body>
+<style>
+.spilgames-branding-image{
+display: block;
+right: 10px;
+top: 10px;
+position: absolute;
+visibility: hidden;
+}
+</style>
+<div>
+<div id="MatchThree"></div>
+</div>
+<script>
+var SpilData = {
+id: '576742227280295000'
+};
+function pauseGame() {
+if(M3.MatchThree.instance){
+if (window.console && window.console.log) {
+console.log('The advertisement is about to show, you should pause your game !');
+}
+GodStep.muteSound(null, 0);
+GodStep.Game.MUTED = true;
+M3.MatchThree.instance.stage.visible = false;
+}
+}
+function resumeGame() {
+if(M3.MatchThree.instance){
+if (window.console && window.console.log) {
+console.log('The advertisment is shown and your game can now be resumed !');
+}
+GodStep.muteSound(null, 1);
+GodStep.Game.MUTED = false;
+M3.MatchThree.instance.stage.visible = true;
+}
+}
+startMatchThree();
+GameAPI.loadAPI (function (apiInstance) {
+// The API is ready for use.
+if (window.console && window.console.log) {
+M3.SPIL_API = apiInstance;
+var game = M3.MatchThree.instance;
+//console.log('GameAPI version ' + apiInstance.version + ' loaded!');
+// Retrieves the logo from Spil
+var logoData = apiInstance.Branding.getLogo();
+// Shows the logo only when it is configured; otherwise, ignore it.
+if (logoData.image) {
+var isTablet = ((/iphone|ipad/gi).test(navigator.appVersion));
+// Creates an element and shows the image
+var logo = M3.LOGO = document.createElement('img');
+logo.src = logoData.image;
+if (logo.addEventListener) {
+ if(isTablet) logo.addEventListener('touchend', logoData.action);
+ else logo.addEventListener('click', logoData.action);
+} else if (logo.attachEvent) {
+ if(isTablet) logo.attachEvent('touchend', logoData.action);
+ else logo.attachEvent('click', logoData.action);
+}
+logo.className += " spilgames-branding-image";
+document.body.appendChild(logo);
+logo.style.right = (game.OW - game.W)/2 + 10 + 'px';
+}
+GameAPI.GameBreak.request(pauseGame, resumeGame);
+}
+}, SpilData);
+</script>
+<script src="../js/stat.js"></script>
+</body>
+</html>
