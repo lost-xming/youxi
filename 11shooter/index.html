@@ -1,180 +1,204 @@
 <!doctype html>
 <html>
+
 <head lang="zh">
-<meta charset="utf-8">
-<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=0.5"/>
-<link rel="apple-touch-icon" href="icon.png" />
-<link rel="shortcut icon" href="icon.png" />
-<link rel="icon" href="icon.png" />
-<title>神枪手</title>
-<meta name="keywords" content="神枪手,神枪手html5游戏" />
-<meta name="description" content="神枪手html5游戏,神枪手手机在线游戏" />
-<script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
-<script type="text/javascript" src="js/tweenjs-0.5.1.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-<style>
-html,body{height: 100%;}
-body{
-background-color: black;
-margin: 0;
-}
-#guanzhu{
-width: 240px;
-height: 240px;
-position: fixed;
-z-index: 999;
-top:50%;
-left: 50%;
-margin:-120px 0 0 -120px;
-}
-#guanzhu a{
-width: 100%;
-height: 100%;
-display: block;
-background: url(img/guanz03.png) no-repeat;
-background-size: contain;
-}
-#guanzhu span{
-position: absolute;
-top: 0;
-right: 0;
-width: 25px;
-display: block;
-height: 25px;
-}
-</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=0.5" />
+	<link rel="apple-touch-icon" href="icon.png" />
+	<link rel="shortcut icon" href="icon.png" />
+	<link rel="icon" href="icon.png" />
+	<title>神枪手</title>
+	<meta name="keywords" content="神枪手,神枪手html5游戏" />
+	<meta name="description" content="神枪手html5游戏,神枪手手机在线游戏" />
+	<script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
+	<script type="text/javascript" src="js/tweenjs-0.5.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			background-color: black;
+			margin: 0;
+		}
+
+		#guanzhu {
+			width: 240px;
+			height: 240px;
+			position: fixed;
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			margin: -120px 0 0 -120px;
+		}
+
+		#guanzhu a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: url(img/guanz03.png) no-repeat;
+			background-size: contain;
+		}
+
+		#guanzhu span {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25px;
+			display: block;
+			height: 25px;
+		}
+	</style>
 </head>
+
 <body onload="init()">
-<canvas id="canvas"></canvas>
-<script language=javascript>
-var oveT = 0;
-function guanzhu() {
-var d = document.createElement("div");
-var b = document.createElement("a");
-var c = document.createElement("span");
-//    d.id = "guanzhu";
-//   b.href = "/game/gkuwan.apk";
-c.addEventListener("click", function() {
-document.body.removeChild(d);
-});
-d.appendChild(b);
-d.appendChild(c);
-b.addEventListener("touchstart", function() {
-_hmt.push(["_trackEvent", "over", "bigbanner"]);
-});
-var h = navigator.userAgent;
-//    if( h.match(/android/gi) != null  && h.match(/MicroMessenger/gi) == null && h.match(/gkuwan/gi) == null  ){
-//        b.href = "/game/gkuwan.apk";
-//       b.style.background = "url(img/guanz03.png) no-repeat";
-//       b.style.backgroundSize = "100%";
-//	    document.body.appendChild(d);
-//    }else{
-return
-//    }
-}
-if(!localStorage.inviteJoin9g){
-localStorage.inviteJoin9g=0;
-}
-var mebtnopenurl = '/game/?f=shooter';
-window.shareData = {
-//		        "imgUrl": "/game.9g.com/sqs/icon.png",
-"timeLineLink": "/game/shooter/?from=shooter",
-"tTitle": "你是神射手么?--猎豹游戏",
-"tContent": "瞄准后发射，看你能打中几环，考验你的眼明手快！"
-};
-function goHome(){
-window.location=mebtnopenurl;
-}
-function clickMore(){
-window.location = mebtnopenurl;
-}
-function dp_share(){
-document.title ="我射出了"+myData.score+"环,最屌一次命中"+myData.maxscore+"环!不服你射下呀!~";
-document.getElementById("share").style.display="block";
-window.shareData.tContent = document.title;
-}
-function dp_Ranking(){
-window.location=mebtnopenurl;
-}
-function showAd(){
-}
-function hideAd(){
-}
-document.addEventListener('DOMContentLoaded',function(){
-var oShare=document.getElementById('share');
-oShare.onclick=function(){this.style.display='none'};
-},false);
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-WeixinJSBridge.on('menu:share:appmessage', function(argv) {
-WeixinJSBridge.invoke('sendAppMessage', {
-"img_url": window.shareData.imgUrl,
-"link": window.shareData.timeLineLink,
-"desc": window.shareData.tContent,
-"title": window.shareData.tTitle
-}, onShareComplete);
-});
-WeixinJSBridge.on('menu:share:timeline', function(argv) {
-WeixinJSBridge.invoke('shareTimeline', {
-"img_url": window.shareData.imgUrl,
-"img_width": "640",
-"img_height": "640",
-"link": window.shareData.timeLineLink,
-"desc": window.shareData.tTitle,
-"title": window.shareData.tContent
-}, onShareComplete);
-});
-}, false);
-</script>
-<div id="share" style="display: none;width:100%;height:100%;background:rgba(0,0,0,.8);position: fixed; z-index: 9999; top: 0; left: 0; ">
-<img width="90%" src="/count_money/img/share_tip.png"/>
-</div>
-<div style="display: none;">
-<script type="text/javascript">
-var myData = { gameid: "shooter" };
-function getJson(a) {
-var b = new XMLHttpRequest();
-b.onreadystatechange = function() {
-if (b.readyState == 4 && b.status == 200) {
-a.callback(b.responseText);
-}
-};
-b.open("get", a.url);
-b.send(null);
-}
-getJson({
-url: "/game/conf/jumpCloud.json?t=" + new Date().getTime(),
-callback: function(b) {
-var a = JSON.parse(b);
-window.shareData.timeLineLink = "/q" + (Math.floor(Math.random() * 5000)) + "." + a.jumphost + "/game/shooter/?t=" + (new Date()).valueOf();
-}
-});
-function dp_submitScore(score,maxscore){
-oveT++;
-if (oveT == 2 || oveT == 4) {
-guanzhu();
-_hmt.push(["_trackEvent", "button", "showBigbanner"]);
-}
-myData.score =parseInt(score);
-myData.maxscore =maxscore;
-myData.scoreName = "打出"+score+"环";
-localStorage.inviteJoin9g++;
-window.shareData.tContent = document.title ="我射出了"+myData.score+"环,最屌一次命中"+myData.maxscore+"环!不服你射下呀!~";
-}
-function onShareComplete(res) {
-document.getElementById("share").style.display="none";
-window.location.href = "/dl.game.35go.net/weixin/game/kw.html?from=shooter";
-return "不跳";
-if (localStorage.myuid && myData.score != undefined) {
-setTimeout(function(){
-document.location.href = mebtnopenurl;
-}, 500);
-}
-else {
-	document.location.href = mebtnopenurl;
-}
-}
-</script>
-</div>
-<script src="../js/stat.js"></script>
+	<canvas id="canvas"></canvas>
+	<script language=javascript>
+		var oveT = 0;
+
+		function guanzhu() {
+			var d = document.createElement("div");
+			var b = document.createElement("a");
+			var c = document.createElement("span");
+			//    d.id = "guanzhu";
+			//   b.href = "/game/gkuwan.apk";
+			c.addEventListener("click", function () {
+				document.body.removeChild(d);
+			});
+			d.appendChild(b);
+			d.appendChild(c);
+			b.addEventListener("touchstart", function () {
+				_hmt.push(["_trackEvent", "over", "bigbanner"]);
+			});
+			var h = navigator.userAgent;
+			//    if( h.match(/android/gi) != null  && h.match(/MicroMessenger/gi) == null && h.match(/gkuwan/gi) == null  ){
+			//        b.href = "/game/gkuwan.apk";
+			//       b.style.background = "url(img/guanz03.png) no-repeat";
+			//       b.style.backgroundSize = "100%";
+			//	    document.body.appendChild(d);
+			//    }else{
+			return
+			//    }
+		}
+		if (!localStorage.inviteJoin9g) {
+			localStorage.inviteJoin9g = 0;
+		}
+		var mebtnopenurl = '/game/?f=shooter';
+		window.shareData = {
+			//		        "imgUrl": "/game.9g.com/sqs/icon.png",
+			"timeLineLink": "/game/shooter/?from=shooter",
+			"tTitle": "你是神射手么?--猎豹游戏",
+			"tContent": "瞄准后发射，看你能打中几环，考验你的眼明手快！"
+		};
+
+		function goHome() {
+			window.location = mebtnopenurl;
+		}
+
+		function clickMore() {
+			window.location = mebtnopenurl;
+		}
+
+		function dp_share() {
+			document.title = "我射出了" + myData.score + "环,最屌一次命中" + myData.maxscore + "环!不服你射下呀!~";
+			document.getElementById("share").style.display = "block";
+			window.shareData.tContent = document.title;
+		}
+
+		function dp_Ranking() {
+			window.location = mebtnopenurl;
+		}
+
+		function showAd() {}
+
+		function hideAd() {}
+		document.addEventListener('DOMContentLoaded', function () {
+			var oShare = document.getElementById('share');
+			oShare.onclick = function () {
+				this.style.display = 'none'
+			};
+		}, false);
+		document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+			WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+				WeixinJSBridge.invoke('sendAppMessage', {
+					"img_url": window.shareData.imgUrl,
+					"link": window.shareData.timeLineLink,
+					"desc": window.shareData.tContent,
+					"title": window.shareData.tTitle
+				}, onShareComplete);
+			});
+			WeixinJSBridge.on('menu:share:timeline', function (argv) {
+				WeixinJSBridge.invoke('shareTimeline', {
+					"img_url": window.shareData.imgUrl,
+					"img_width": "640",
+					"img_height": "640",
+					"link": window.shareData.timeLineLink,
+					"desc": window.shareData.tTitle,
+					"title": window.shareData.tContent
+				}, onShareComplete);
+			});
+		}, false);
+	</script>
+	<div id="share"
+		style="display: none;width:100%;height:100%;background:rgba(0,0,0,.8);position: fixed; z-index: 9999; top: 0; left: 0; ">
+		<img width="90%" src="/count_money/img/share_tip.png" />
+	</div>
+	<div style="display: none;">
+		<script type="text/javascript">
+			var myData = {
+				gameid: "shooter"
+			};
+
+			function getJson(a) {
+				var b = new XMLHttpRequest();
+				b.onreadystatechange = function () {
+					if (b.readyState == 4 && b.status == 200) {
+						a.callback(b.responseText);
+					}
+				};
+				b.open("get", a.url);
+				b.send(null);
+			}
+			getJson({
+				url: "/game/conf/jumpCloud.json?t=" + new Date().getTime(),
+				callback: function (b) {
+					var a = JSON.parse(b);
+					window.shareData.timeLineLink = "/q" + (Math.floor(Math.random() * 5000)) + "." + a.jumphost +
+						"/game/shooter/?t=" + (new Date()).valueOf();
+				}
+			});
+
+			function dp_submitScore(score, maxscore) {
+				oveT++;
+				if (oveT == 2 || oveT == 4) {
+					guanzhu();
+					_hmt.push(["_trackEvent", "button", "showBigbanner"]);
+				}
+				myData.score = parseInt(score);
+				myData.maxscore = maxscore;
+				myData.scoreName = "打出" + score + "环";
+				localStorage.inviteJoin9g++;
+				window.shareData.tContent = document.title = "我射出了" + myData.score + "环,最屌一次命中" + myData.maxscore + "环!不服你射下呀!~";
+			}
+
+			function onShareComplete(res) {
+				document.getElementById("share").style.display = "none";
+				window.location.href = "/dl.game.35go.net/weixin/game/kw.html?from=shooter";
+				return "不跳";
+				if (localStorage.myuid && myData.score != undefined) {
+					setTimeout(function () {
+						document.location.href = mebtnopenurl;
+					}, 500);
+				} else {
+					document.location.href = mebtnopenurl;
+				}
+			}
+			alert(window.navigator.userAgent)
+		</script>
+	</div>
+	<script src="../js/stat.js"></script>
 </body>
+
 </html>
